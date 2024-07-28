@@ -22,37 +22,23 @@ extension View {
 
 struct Input: View {
     @Binding var text: String
+    @Binding var isError: Bool
     let label: String
+    let placholder: String
     var action: (() -> Void)?
     var regex: String?
     
-    @State private var isError: Bool?
-    
-    func validateInput(_ input: String) -> Bool {
-        if input.isEmpty {return false}
-        
-        if let regex = regex {return input.range(of: regex, options: .regularExpression) != nil}
-        
-        return true
-    }
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Typography(text: label, color: (isError ?? false) ? Color.Colors.red : .Grayscale._30, fontType: .Caption)
+            Typography(text: label, color: isError ? Color.Colors.red : .Grayscale._30, fontType: .Caption)
                 .padding(.horizontal, 8)
             
             TextField("", text: $text)
                 .fontModifier(.Body, .Grayscale._10)
                 .placeholder(when: text.isEmpty) {
-                    Typography(text: "01가 1234", color: .Grayscale._40, fontType: .Body)
+                    Typography(text: placholder, color: .Grayscale._40, fontType: .Body)
                 }
                 .onSubmit {
-                    if !validateInput(text) {
-                        isError = true
-                        return
-                    }
-                    
-                    isError = false
                     (action ?? {print("Input Submited: " + text)})()
                 }
                 .padding(16)
@@ -61,8 +47,9 @@ struct Input: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
                     .inset(by: 0.5)
-                    .stroke((isError ?? false) ? Color.Colors.red : Color.Grayscale._50, lineWidth: 1)
+                    .stroke(isError ? Color.Colors.red : Color.Grayscale._50, lineWidth: 1)
                 )
+                .background(Color.Grayscale._70)
                 .cornerRadius(12)
         }
         .frame(maxWidth: .infinity)
@@ -72,11 +59,22 @@ struct Input: View {
 
 #Preview {
     struct PreviewWrapper: View {
-        @State var carNumber = ""
+        @State var phoneNumber = ""
+        @State var isInputError = false
+        
+        let regex = "^[0-9]{3}[0-9]{4}[0-9]{4}$"
+        
+        func action() {
+            isInputError = (!validateByRegex(phoneNumber, regex) && phoneNumber.isEmpty)
+            if isInputError {return}
+            
+            print("success")
+            isInputError = false
+        }
         
         var body: some View {
             VStack {
-                Input(text: $carNumber, label: "차량번호", regex: #""#)
+                Input(text: $phoneNumber, isError: $isInputError, label: "전화번호", placholder: "01012341234", action: action)
             }
         }
     }
