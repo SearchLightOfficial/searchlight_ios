@@ -11,12 +11,18 @@
 		240317E82C16B5CF0037C389 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240317E72C16B5CF0037C389 /* OnboardingView.swift */; };
 		240317EB2C16C0AF0037C389 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240317EA2C16C0AF0037C389 /* OnboardingViewModel.swift */; };
 		240317EE2C16C2E80037C389 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240317ED2C16C2E80037C389 /* Button.swift */; };
+		244BC5022C33C6570077DD37 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC5012C33C6570077DD37 /* Validators.swift */; };
 		2458D0DD2C182BE4009A81F6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458D0DC2C182BE4009A81F6 /* SplashView.swift */; };
 		2458D0DF2C182F19009A81F6 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458D0DE2C182F19009A81F6 /* Input.swift */; };
+		2465EA8A2C56A4CD0074F228 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2465EA892C56A4CD0074F228 /* Banner.swift */; };
+		2465EA8C2C56AB930074F228 /* PatientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2465EA8B2C56AB8C0074F228 /* PatientViewModel.swift */; };
+		2465EA8E2C56ACE90074F228 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2465EA8D2C56ACE60074F228 /* LocationManager.swift */; };
 		248C95AF2C18187000CE081F /* SUIT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 248C95AC2C18187000CE081F /* SUIT-Medium.ttf */; };
 		248C95B02C18187000CE081F /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 248C95AD2C18187000CE081F /* SUIT-Regular.ttf */; };
 		248C95B12C18187000CE081F /* SUIT-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 248C95AE2C18187000CE081F /* SUIT-SemiBold.ttf */; };
 		248C95B32C18188200CE081F /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C95B22C18187E00CE081F /* Typography.swift */; };
+		24D65DD02C3E469E00D37F16 /* PatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D65DCF2C3E469E00D37F16 /* PatientView.swift */; };
+		24D65DD22C3E4D7F00D37F16 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D65DD12C3E4D7F00D37F16 /* Header.swift */; };
 		24F6F56E2C10F7A600C20459 /* searchlight_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F6F56D2C10F7A600C20459 /* searchlight_iosApp.swift */; };
 		24F6F5702C10F7A600C20459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F6F56F2C10F7A600C20459 /* ContentView.swift */; };
 		24F6F5722C10F7A700C20459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F6F5712C10F7A700C20459 /* Assets.xcassets */; };
@@ -29,13 +35,19 @@
 		240317E72C16B5CF0037C389 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		240317EA2C16C0AF0037C389 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		240317ED2C16C2E80037C389 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		244BC5012C33C6570077DD37 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		2458D0DC2C182BE4009A81F6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2458D0DE2C182F19009A81F6 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		245F84932C3238B600B984C9 /* searchlight-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "searchlight-ios-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2465EA892C56A4CD0074F228 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		2465EA8B2C56AB8C0074F228 /* PatientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewModel.swift; sourceTree = "<group>"; };
+		2465EA8D2C56ACE60074F228 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		248C95AC2C18187000CE081F /* SUIT-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.ttf"; sourceTree = "<group>"; };
 		248C95AD2C18187000CE081F /* SUIT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.ttf"; sourceTree = "<group>"; };
 		248C95AE2C18187000CE081F /* SUIT-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.ttf"; sourceTree = "<group>"; };
 		248C95B22C18187E00CE081F /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		24D65DCF2C3E469E00D37F16 /* PatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientView.swift; sourceTree = "<group>"; };
+		24D65DD12C3E4D7F00D37F16 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		24F6F56A2C10F7A600C20459 /* searchlight_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchlight_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F6F56D2C10F7A600C20459 /* searchlight_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchlight_iosApp.swift; sourceTree = "<group>"; };
 		24F6F56F2C10F7A600C20459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 		240317E02C16A1DF0037C389 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				24D65DC92C3E460C00D37F16 /* Patient */,
 				2458D0D92C182BA0009A81F6 /* Splash */,
 				240317E52C16B4B80037C389 /* Onboarding */,
 			);
@@ -142,8 +155,19 @@
 			children = (
 				240317ED2C16C2E80037C389 /* Button.swift */,
 				2458D0DE2C182F19009A81F6 /* Input.swift */,
+				24D65DD12C3E4D7F00D37F16 /* Header.swift */,
+				2465EA892C56A4CD0074F228 /* Banner.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		244BC5002C33C6310077DD37 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2465EA8D2C56ACE60074F228 /* LocationManager.swift */,
+				244BC5012C33C6570077DD37 /* Validators.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		2458D0D92C182BA0009A81F6 /* Splash */ = {
@@ -160,6 +184,31 @@
 				2458D0DC2C182BE4009A81F6 /* SplashView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		24D65DC92C3E460C00D37F16 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				24D65DCB2C3E466D00D37F16 /* ViewModels */,
+				24D65DCA2C3E466600D37F16 /* Views */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		24D65DCA2C3E466600D37F16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24D65DCF2C3E469E00D37F16 /* PatientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24D65DCB2C3E466D00D37F16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2465EA8B2C56AB8C0074F228 /* PatientViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		24F6F5612C10F7A600C20459 = {
@@ -183,6 +232,7 @@
 		24F6F56C2C10F7A600C20459 /* searchlight_ios */ = {
 			isa = PBXGroup;
 			children = (
+				244BC5002C33C6310077DD37 /* Utilities */,
 				245F84932C3238B600B984C9 /* searchlight-ios-Info.plist */,
 				240317EC2C16C2900037C389 /* Components */,
 				240317E12C16AD4D0037C389 /* Resources */,
@@ -303,11 +353,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2465EA8C2C56AB930074F228 /* PatientViewModel.swift in Sources */,
+				24D65DD02C3E469E00D37F16 /* PatientView.swift in Sources */,
 				240317EE2C16C2E80037C389 /* Button.swift in Sources */,
 				24F6F5702C10F7A600C20459 /* ContentView.swift in Sources */,
 				24F6F56E2C10F7A600C20459 /* searchlight_iosApp.swift in Sources */,
+				244BC5022C33C6570077DD37 /* Validators.swift in Sources */,
+				2465EA8A2C56A4CD0074F228 /* Banner.swift in Sources */,
+				24D65DD22C3E4D7F00D37F16 /* Header.swift in Sources */,
 				240317E82C16B5CF0037C389 /* OnboardingView.swift in Sources */,
 				248C95B32C18188200CE081F /* Typography.swift in Sources */,
+				2465EA8E2C56ACE90074F228 /* LocationManager.swift in Sources */,
 				240317EB2C16C0AF0037C389 /* OnboardingViewModel.swift in Sources */,
 				2458D0DF2C182F19009A81F6 /* Input.swift in Sources */,
 				2458D0DD2C182BE4009A81F6 /* SplashView.swift in Sources */,
@@ -450,12 +506,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "searchlight-ios-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SearchLight;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 정보 수집에 동의해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,12 +540,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "searchlight-ios-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SearchLight;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 정보 수집에 동의해주세요.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
