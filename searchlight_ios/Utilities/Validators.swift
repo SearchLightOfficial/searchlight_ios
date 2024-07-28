@@ -7,8 +7,6 @@
 
 import Foundation
 
-func 
-
 func validateByRegex(_ input: String, _ regex: String) -> Bool {
-    return true
+    return input.range(of: regex, options: .regularExpression) != nil
 }
