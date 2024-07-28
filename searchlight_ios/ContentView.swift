@@ -12,9 +12,10 @@ struct ContentView: View {
     @State private var isLogin = false
     
     var body: some View {
-        NavigationView{
-            ZStack{
+        NavigationView {
+            ZStack {
                 Color.Grayscale._60.ignoresSafeArea()
+                
                 content
             }
         }
@@ -23,9 +24,9 @@ struct ContentView: View {
     private var content: some View {
         Group {
             if isLogin {
-                Typography(text: "Logined", color: .Grayscale._10, fontType: .HeadLine)
+                PatientView()
             } else {
-                OnboardingView()
+                OnboardingView(isLogined: $isLogin)
             }
         }
     }
